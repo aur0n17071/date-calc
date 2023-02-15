@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lora:regular,500,600,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Date calculator</title>
+</head>
+<body>
+    <div class="wraper">
+        <header class="header">
+            <h1 class="header-h1">Date calculator</h1>
+            <div class="header-img-container">
+                <img class="header-img" src="img/logo.jpg" alt="">
+            </div>
+        </header>
+    </div>
+    <main class="wraper">
+    <section>
+        <form action="" class="form">
+            <div class="date-input-container">
+                <label class="date-input" for="date-input-1">Date one
+                    <input type="date" name="date-input-1" id="">
+                </label>
+                <label class="date-input" for="date-input-2">Date two
+                    <input type="date" name="date-input-2" id="">
+                </label>
+            </div>
+            <div class="preset">
+                <select class="preset__item preset__week" name="week" id="">
+                    <option value="1">Тиждень</option>
+                    <option value="2">Місяць</option>
+                </select>
+                <select class="preset__item preset__day" name="day-type" id="">
+                    <option value="1">Всі дні</option>
+                    <option value="2">Будні дні</option>
+                    <option value="3">Вихідні дні</option>
+                </select>
+                <select class="preset__item preset__value" name="day-type" id="">
+                    <option value="1">Порахувати кількість днів</option>
+                    <option value="2">Порахувати кількість годин</option>
+                    <option value="3">Порахувати кількість хвилин</option>
+                    <option value="4">Порахувати кількість секунд</option>
+                </select>
+            </div>
+            <div class="date-output">
+                <output name="result">Result 0 (time type)</output>
+            </div>
+        </form>
+    </section>
+    <section class="prev-result">
+        <table class="prev-result__table" id="prev-result">
+            <tr><td>Time</td><td>result</td></tr>
+        </table>
+    </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
