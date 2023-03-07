@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  /* scroll-behavior: smooth; */
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+}
+
+textarea,
+button,
+input {
+	font-weight: inherit;
+	font-size: inherit;
+	color: inherit;
+	font-family: inherit;
+}
+
+button {
+	cursor: pointer;
+	background-color: inherit;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
