@@ -1,0 +1,345 @@
+:root{
+   --orange: #F58500;
+   --blue: #0B36A4;
+}
+body{
+    font-family: Open sans, sans-serif;
+    font-size: 0.875rem;
+    background: #F8F9FA;
+    height: auto;
+}
+input{
+    background-color: #F8F9FA;
+}
+table{
+    border-spacing: 0;
+}
+th,td{
+    border-bottom: 1px solid #0000009c;
+}
+tbody:not(:first-child):hover{
+    color: white;
+    background-color: var(--blue);
+}
+.wraper{
+    min-width: 300px;
+    max-width: 600px;
+    overflow: clip;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.header {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header-h1 {
+    font-size: 36px;
+}
+.header-img-container{
+    width: 200px;
+}
+.header-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.theme-btn{
+    align-self: flex-end;
+    margin-top: 20px;
+    display: inline-block;
+	cursor: pointer;
+	line-height: 34px;
+	border: 1px solid #999;
+	user-select: none;
+    width: 100px;
+    text-align: center;
+    margin-right: 20px;
+}
+.theme-btn:active{
+    background: var(--blue);
+    color: #FFFFFF;
+}
+.theme-btn:hover{
+    color: var(--blue);
+}
+.theme-btn:active:hover{
+    color: white;
+}
+.button-blue input[type=radio] {
+	display: none;
+}
+.button-blue label {
+	display: inline-block;
+	cursor: pointer;
+	line-height: 34px;
+	border: 1px solid #999;
+	user-select: none;
+    width: 100%;
+    text-align: center;
+}
+.button-blue input[type=radio]:checked + label {
+	background: var(--blue);
+    color: #FFFFFF;
+}
+.button-blue label:hover {
+	color: var(--blue);
+}
+.button-blue:first-of-type label{
+    border-radius: 8px 0px 0px 8px;
+}
+.button-blue:last-of-type label{
+    border-radius: 0px 8px 8px 0px;
+}
+
+/* ---------- FORM ---------- */
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.date-input-container {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+.date-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.date-input-1, .date-input-2{
+    font-size: 16px;
+    border-bottom: 1px solid black;
+    cursor: text;
+    width: 130px;
+    min-width: 115px
+}
+::-webkit-calendar-picker-indicator{
+    cursor: pointer;
+}
+.preset{
+    display: flex;
+    flex-direction: column;
+}
+.preset-btn__box{
+    display: flex;
+    flex-direction: column;
+}
+.preset__header{
+    align-self: center;
+    margin-bottom: 16px;
+}
+.preset__btn {
+    flex: 0 1 50%;
+}
+.preset__btn:first-of-type label{
+    border-radius: 8px 8px 0px 0px;
+}
+.preset__btn:last-of-type label{
+    border-radius: 0px 0px 8px 8px;
+}
+.preset__btn label{
+    padding: 6px 10px;
+}
+/* OPTIONS */
+.options{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 20px;
+    margin-top: 40px;
+}
+.options__days{
+    display: flex;
+}
+.days__btn {
+    flex: 0 1 33%;
+}
+.days__btn label{
+    padding: 13px 51px;
+}
+select {
+    grid-area: select;
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    padding: 0 1em 0 0;
+    margin: 0;
+    width: 100%;
+    font-family: inherit;
+    cursor: inherit;
+}
+.options-wrapper{
+    display: grid;
+    grid-template-areas: "select";
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    border: 1px solid #777;
+    border-radius: 0.25em;
+    padding: 0.25em 0.5em;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.options-wrapper::after {
+    grid-area: select;
+    justify-self: end;
+    margin-top: 5px;
+    content: "";
+    width: 0.8em;
+    height: 0.5em;
+    background-color: #777;
+    clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+  }
+  .options__type{
+    position: relative;
+    appearance: none;
+    background-color: transparent;
+}
+/* OUTPUT */
+.date-output{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.submit-btn{
+    margin-top: 20px;
+    width: 157px;
+    height: 56px;
+    background-color: var(--orange);
+    color: white;
+    align-self: center;
+    border-radius: 8px 8px 8px 8px;
+}
+.submit-btn:active{
+    background-color: #f55e00;
+}
+.output-box {
+    display: flex;
+    width: 200px;
+    height: 40px;
+    border-bottom: 1px solid black;
+    justify-content: center;
+    align-items: flex-end;
+}
+.output-result{
+    font-size: 16px;
+}
+.prev-result{
+    display: flex;
+    flex-direction: column;
+}
+.prev-result__clear-btn{
+    align-self: center;
+    margin-top: 20px;
+    display: inline-block;
+	cursor: pointer;
+	line-height: 34px;
+	border: 1px solid #999;
+	user-select: none;
+    width: 150px;
+    text-align: center;
+    margin-right: 20px;
+}
+.prev-result__clear-btn:active{
+    background: red;
+    color: #FFFFFF;
+}
+.prev-result__clear-btn:hover{
+    color: var(--blue);
+}
+.prev-result__clear-btn:active:hover{
+    color: white;
+}
+.prev-result__table{
+    width: 100%;
+    padding: 20px 15px;
+}
+.prev-result__table td{
+    width: 19%;
+    text-align: center;
+}
+.prev-result__table td:last-child{
+    width: 20%;
+    padding-left: 3vw;
+    text-align: start;
+}
+/* BLACK THEME*/
+.body-black{
+    background-color: black;
+    color: white;
+}
+.body-black input{
+    background-color: black;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+.body-black td{
+    border-bottom: 1px solid #ffffff9c;
+}
+.body-black .output-box{
+    border-bottom: 1px solid #ffffff9c;
+}
+.body-black ::-webkit-calendar-picker-indicator {
+    background-image: url(../img/calendar.svg);
+}
+.body-black select{
+    background-color: black;
+    color: white;
+}
+.body-black .options-wrapper{
+    background-color: #000000;
+}
+/* MEDIA */
+@media screen and (max-width:620px) {
+    .days__btn label{
+        padding: 13px 0px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .header-h1 {
+        padding: 0 20px;
+        white-space: wrap;
+        text-align: center;
+    }
+    .date-input-container{
+        flex-direction: column;
+        padding: 0 20px;
+        align-items: center;
+    }
+    .button-blue:first-of-type label{
+        border-radius: 8px 8px 0px 0px;
+    }
+    .button-blue:last-of-type label{
+        border-radius: 0px 0px 8px 8px;
+    }
+    .preset{
+        order: 2;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .preset-btn__box{
+        flex-direction: row;
+    }
+    
+    .preset__btn:first-of-type label{
+        border-radius: 8px 0 0 8px;
+    }
+    .preset__btn:last-of-type label{
+        border-radius: 0 8px 8px 0;
+    }
+    .preset__btn {
+        flex: 0 1 50%;
+    }
+    .options__days{
+        flex-direction: column;
+    }
+
+}
