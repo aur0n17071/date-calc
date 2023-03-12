@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300" rel="stylesheet" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Date calculator</title>
+</head>
+<body class="theme">
+    <div class="wraper">
+        <header class="header">
+            <h1 class="header-h1">Калькулятор дат</h1>
+            <div class="header-img-container">
+                <img class="header-img" src="img/logo.svg" alt="">
+            </div>
+        </header>
+    </div>
+    <main class="wraper">
+    <section>
+        <form action="" class="form">
+            <button class="theme-btn">Темна тема</button>
+            <div class="date-input-container">
+                <label class="date-input" for="date-input-1">Початкова дата
+                    <input class="date-input-1" type="date" name="date-input-1" id="" min = '' max = ''>
+                </label>
+
+                <div class="preset">
+                    <h2 class="preset__header">Пресети</h2>
+                    <div class="preset-btn__box">
+                        <div class="preset__btn button-blue">
+                            <input id="preset-1" type="radio" name="radio-preset" value="Тиждень" >
+                            <label for="preset-1">Тиждень</label>
+                        </div>
+                        <div class="preset__btn button-blue">
+                            <input id="preset-2" type="radio" name="radio-preset" value="Місяць" >
+                            <label for="preset-2">Місяць</label>
+                        </div>
+                    </div>
+                </div>
+
+                <label class="date-input" for="date-input-2">Кiнцева дата
+                    <input class="date-input-2" type="date" name="date-input-2" id="" min = '' max = ''>
+                </label>
+            </div>
+            <div class="options">
+                <div class="options__days">
+                    <div class="days__btn button-blue">
+                        <input id="days-1" type="radio" name="radio-days" value="all" checked>
+                        <label for="days-1">Всі дні</label>
+                    </div>
+
+                    <div class="days__btn button-blue">
+                        <input id="days-2" type="radio" name="radio-days" value="weekdays">
+                        <label for="days-2">Будні дні</label>
+                    </div>
+                    <div class="days__btn button-blue">
+                        <input id="radio-3" type="radio" name="radio-days" value="weekend">
+                        <label for="radio-3">Вихідні дні</label>
+                    </div>
+                </div>
+
+                <div class="options-wrapper">
+                    <select class="options__type" name="optins-type" id="">
+                        <option value="days">Порахувати кількість днів</option>
+                        <option value="hours">Порахувати кількість годин</option>
+                        <option value="minutes">Порахувати кількість хвилин</option>
+                        <option value="seconds">Порахувати кількість секунд</option>
+                    </select>
+                </div>
+            </div>
+            <button class="submit-btn" type="submit">Порахувати</button>
+            <div class="date-output">
+                <h2 class="output-header">Результат обчислення</h2>
+                <div class="output-box">
+                    <p class="output-result"></p>
+                </div>
+            </div>
+            
+        </form>
+    </section>
+    <section class="prev-result">
+        <button class="prev-result__clear-btn">Очистити історію</button>
+        <table class="prev-result__table" id="prev-result">
+        </table>
+    </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
